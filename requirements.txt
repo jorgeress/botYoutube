@@ -1,0 +1,18 @@
+# Pipeline
+pillow>=10.0.0
+requests>=2.31.0
+stable-ts>=2.17.0          # alineacion forzada para los subtitulos
+
+# Voz local (Chatterbox). Instala torch acorde a tu CUDA antes que esto.
+chatterbox-tts>=0.1.1
+torch>=2.4.0
+torchaudio>=2.4.0
+
+# Backend de imagen "gemini". No hace falta con "manual" ni con "comfyui".
+google-genai>=0.3.0
+
+# pydub NO es compatible con Python 3.13 (se elimino audioop). El audio se
+# concatena llamando a ffmpeg directamente, que hay que instalar aparte.
+
+# Entrenamiento de LoRA (tools/lora_training/): opcional y ya fuera del
+# pipeline. Ver requirements-lora.txt.

@@ -1,0 +1,53 @@
+# Generated output: never commit
+output/
+
+# Input script (user-specific content, paste manually)
+input/script.txt
+
+# Secrets: API keys and session cookies, never commit
+secrets_local.py
+.env
+.env.local
+*cookies*.txt
+cookies/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Large model files (stay in the ComfyUI install, not here)
+*.gguf
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Downloaded model configs (fetched on demand, not versioned)
+tools/lora_training/sd15_diffusers/
+
+# Dataset / reference frames (large binaries)
+tools/lora_training/raw_frames/
+tools/lora_training/selected/
+tools/lora_training/dataset/
+tools/lora_training/output/
+
+# Test artifacts (images and audio produced while tuning)
+tools/lora_training/test_*.png
+tools/voice_test_*.mp3
+tests/images/
+
+# Temp files
+*.tmp
+_preview_overlays.py
+_test_*.py
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

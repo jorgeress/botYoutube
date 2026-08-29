@@ -1,0 +1,16 @@
+CHARACTER MODEL-SHEET: generate this ONCE in AI Studio (Nano Banana), then save the
+result as:  assets/character_ref.png
+
+It becomes the reference image attached to every character beat (config.py
+CHARACTER_REFERENCE_IMAGE), so the stickman stays consistent across all 83 images.
+Tip: generate 2-3 times and keep the cleanest, most neutral one. Square or 1:1 is fine
+for a reference.
+
+PROMPT:
+Hand-drawn 2D cartoon, black ink on a plain white background. One single minimalist
+stickman character, shown standing front-facing and centered, full body, with a calm
+neutral expression: a round head, two small black dot eyes, a simple short curved-line
+mouth, a thin uniform black line-weight body, straight stick arms and stick legs, simple
+rounded hands with no fingers, no nose, no clothing, no shading, no color. Clean flat
+reference drawing, the whole figure inside the frame with plenty of white space around it.
+No text, no labels, no extra characters, draw the figure exactly once.

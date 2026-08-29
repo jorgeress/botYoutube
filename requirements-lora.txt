@@ -1,0 +1,14 @@
+# Entrenamiento de LoRA sobre Stable Diffusion 1.5 (tools/lora_training/).
+# Quedo obsoleto cuando pase a generar imagenes con referencia de personaje,
+# asi que va aparte: el pipeline no lo necesita.
+diffusers>=0.31.0
+transformers>=4.44.0
+accelerate>=0.34.0
+peft>=0.13.0
+datasets>=3.0.0
+huggingface_hub>=0.25.0
+torchvision>=0.19.0
+tqdm>=4.66.0
+bitsandbytes>=0.44.0       # optimizador en 8 bits
+xformers>=0.0.28           # atencion con menos memoria, opcional
+wandb>=0.18.0              # seguimiento del entrenamiento, opcional
